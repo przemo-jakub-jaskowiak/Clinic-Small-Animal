@@ -10,11 +10,14 @@ font-family: 'Roboto Slab', serif;
     box-sizing: border-box;
 }
 
+
+
 body {
     background-color: cadetblue;
     height: 200vh;
     color: whitesmoke;
     letter-spacing: 3px;
+    font-family: 'Roboto', sans-serif
 }
 
 div.arrow {
@@ -92,27 +95,33 @@ div.menu {
 div.menu div {
     background-color: #6495ed;
     margin: 5px;
-    height: 55px;
+    height: 75px;
     width: 200px;
     letter-spacing: 2px;
     padding: 20px;
     font-size: 16px;
     text-align: center;
-    line-height: 10px;
+
     overflow: hidden;
     box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.5);
     transition: 0.5s;
 }
 
-div.menu div i {
-    font-size: 15px;
+div.menu div h6 {
+    line-height: 2px;
+    font-size: 24px;
+}
+
+div.menu div h5 {
+    line-height: 25px;
+    padding-bottom: 10px;
 }
 
 div.menu div:hover {
     background-color: whitesmoke;
     color: teal;
     cursor: pointer;
-
+    box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -121,17 +130,145 @@ div.menu div:hover {
 @media(max-width: 1024px) {
     body {
         background-color: coral;
+
     }
 
     header {
         flex-direction: column;
         margin-bottom: 20px;
+        height: 400px;
     }
 
+
+
     div.menu {
+        height: 480px;
         margin-top: 100px;
         flex-direction: column;
         align-items: flex-start;
+        justify-content: space-around;
     }
 
+    div.menu div {
+        background-color: #6495ed;
+        margin: 5px;
+        height: 75px;
+        width: 190px;
+        letter-spacing: 2px;
+        padding: 20px;
+
+        text-align: center;
+
+        overflow: hidden;
+        box-shadow: -10px 5px 5px rgba(0, 0, 0, 0.5);
+        transition: 0.5s;
+    }
+
+    div.menu div h5 {
+        display: none;
+    }
+
+
+}
+
+div.offer-1,
+div.team-1 {
+
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: yellow;
+    width: 90vw;
+    height: 90vh;
+}
+
+button.close {
+    padding: 25px;
+    position: absolute;
+    top: 5px;
+    right: 10px;
+    background-color: tomato;
+    box-shadow: -5px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+button.close:hover {
+    cursor: pointer;
+}
+
+div.text-1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 32px;
+    color: black;
+}
+
+.active {
+    display: block;
+}
+
+.missing {
+    display: none;
+}
+
+.blur {
+    filter: blur(4px);
+}
+
+
+section.gallery {
+    width: 1024px;
+    height: 450px;
+    margin: 10px auto 30px;
+
+}
+
+div.gallery-1 {
+    margin: 10px auto;
+    width: 950px;
+    height: 400px;
+
+}
+
+div.gallery-1 img {
+    display: block;
+    margin: 5px auto;
+    width: 700px;
+    height: 350px;
+    box-shadow: -10px 10px 5px rgba(0, 0, 0, 0.2)
+}
+
+section.box {
+    display: flex;
+    justify-content: space-between;
+    height: 200px;
+    width: 90vw;
+
+    margin: 20px 40px;
+}
+
+
+section.box div.boxer {
+    height: 190px;
+    width: 180px;
+    margin: 5px;
+    padding: 15px;
+    background-color: #6495ed;
+    box-shadow: -20px 10px 10px rgba(0, 0, 0, 0.5);
+    transition: 0.3s linear;
+    text-align: center;
+    line-height: 50px;
+    word-wrap: break-word;
+    overflow: hidden;
+}
+
+section.box div.boxer:hover {
+    height: 195px;
+    width: 185px;
+    background-color: whitesmoke;
+    color: teal;
+    cursor: pointer;
+    box-shadow: -15px 5px 5px rgba(0, 0, 0, 0.2);
 }
