@@ -9,3 +9,84 @@ font-family: 'Roboto Slab', serif;
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    background-color: cadetblue;
+    height: 200vh;
+}
+
+header {
+    height: 200px;
+    width: 100%;
+    background-color: coral;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.logo {
+    max-width: 150px;
+    font-family: 'Roboto Slab', serif;
+    font-size: 20px;
+    background-color: cornflowerblue;
+    overflow: hidden;
+    text-align: center;
+    padding: 20px;
+    margin: 10px 30px;
+
+}
+
+div.logo i {
+    font-size: 42px;
+    padding: 10px;
+}
+
+div.menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    background-color: darkgray;
+    height: 100px;
+    width: 900px;
+    margin: 7% 35px;
+    font-size: 15px;
+
+    font-family: 'Roboto Slab', serif;
+}
+
+div.menu div {
+    background-color: crimson;
+    margin: 5px;
+    height: 55px;
+    width: 200px;
+    letter-spacing: 2px;
+    padding: 20px;
+    font-size: 18px;
+    text-align: center;
+    line-height: 10px;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+div.menu div i {
+    font-size: 15px;
+}
+
+div.menu div:hover {
+    background-color: whitesmoke;
+    color: teal;
+    cursor: pointer;
+
+}
+
+
+
+/*Wzór responsywności*/
+@media(max-width: 1024px) {
+    body {
+        background-color: coral;
+    }
+
+
+}
